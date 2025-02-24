@@ -4,7 +4,7 @@ function Todo() {
     const [task, setTask] = useState([]);
     const [newTask, setNewTask] = useState("");
     const[editItem,setEdititem]=useState(null)
-
+    
 function handleChange(event) 
     {
       setNewTask(event.target.value)
@@ -12,7 +12,7 @@ function handleChange(event)
  function addtask()
  {
       if(newTask!=="")   
-        setTask( [...task,newTask])
+        setTask( [...task,newTask])  
         setNewTask("")  
  }
  function deletetask(index)
@@ -29,7 +29,7 @@ function updatetask()
     const updateitem=[...task]
     updateitem[editItem]=newTask  // old value replace agum 
     setTask(updateitem)   // athey task array la replace panre 
-    setEdititem(null) 
+    setEdititem(null)     // thirupa null aagirum
 }
 function updateoradd()
 {
